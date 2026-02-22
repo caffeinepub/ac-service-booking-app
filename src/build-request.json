@@ -1,0 +1,94 @@
+{
+  "kind": "build_request",
+  "title": "Rebuild AC service booking application",
+  "projectName": "AC Service Booking",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Create a backend data model to store AC service bookings with fields for customer name, contact number, service type (installation, repair, maintenance, cleaning), preferred date and time, address, and booking status",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-project-state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend defines a Booking type with all required fields",
+        "Service type is restricted to the four specified options",
+        "Booking status field is included in the data model"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement backend functions to create new AC service bookings, retrieve all bookings, update booking status, and delete bookings",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-project-state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend exposes a function to create a new booking",
+        "Backend exposes a function to retrieve all bookings",
+        "Backend exposes a function to update the status of an existing booking",
+        "Backend exposes a function to delete a booking"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create a booking form interface where users can enter customer details (name, phone), select service type from options (installation, repair, maintenance, cleaning), choose preferred date and time, and provide service address",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-project-state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form includes input fields for customer name and phone number",
+        "Form includes a dropdown or radio buttons for service type selection with all four options",
+        "Form includes date and time picker inputs",
+        "Form includes an address input field",
+        "Form has a submit button that creates a new booking"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Display a list or table view of all AC service bookings showing customer name, service type, scheduled date/time, address, and current status with ability to update status or cancel bookings",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-project-state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "UI displays all bookings in a list or table format",
+        "Each booking shows customer name, service type, scheduled date/time, address, and status",
+        "UI provides controls to update the status of a booking",
+        "UI provides a control to cancel (delete) a booking"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Design a professional and clean visual theme suitable for a service booking application with a cohesive color scheme, clear typography, and intuitive layout that works well for form inputs and data displays",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-project-state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Application uses a consistent color scheme throughout",
+        "Typography is clear and readable for all text elements",
+        "Layout is intuitive and makes form submission and data viewing straightforward",
+        "Visual design is appropriate for a professional service booking context"
+      ]
+    }
+  ],
+  "constraints": [],
+  "nonGoals": [],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-booking-form-interface-where-users-can-enter-customer-details-name-phone-select-service-type-from-options-installation-repair-maintenance-cleaning-choose-preferred-date-and-time-and-provide-service-address",
+      "featureTitle": "Create a booking form interface where users can enter customer details (name, phone), select service type from options (installation, repair, maintenance, cleaning), choose preferred date and time, and provide service address",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/BookingForm.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-a-list-or-table-view-of-all-ac-service-bookings-showing-customer-name-service-type-scheduled-date-time-address-and-current-status-with-ability-to-update-status-or-cancel-bookings",
+      "featureTitle": "Display a list or table view of all AC service bookings showing customer name, service type, scheduled date/time, address, and current status with ability to update status or cancel bookings",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/BookingList.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-professional-and-clean-visual-theme-suitable-for-a-service-booking-application-with-a-cohesive-color-scheme-clear-typography-and-intuitive-layout-that-works-well-for-form-inputs-and-data-displays",
+      "featureTitle": "Design a professional and clean visual theme suitable for a service booking application with a cohesive color scheme, clear typography, and intuitive layout that works well for form inputs and data displays",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

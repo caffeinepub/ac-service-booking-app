@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "An app for booking AC (air conditioning) service work",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-booking-form-interface-where-users-can-enter-customer-details-name-phone-select-service-type-from-options-installation-repair-maintenance-cleaning-choose-preferred-date-and-time-and-provide-service-address",
+      "title": "Create a booking form interface where users can enter customer details (name, phone), select service type from options (installation, repair, maintenance, cleaning), choose preferred date and time, and provide service address",
+      "reqIds": [
+        "REQ-3",
+        "REQ-8"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-display-a-list-or-table-view-of-all-ac-service-bookings-showing-customer-name-service-type-scheduled-date-time-address-and-current-status-with-ability-to-update-status-or-cancel-bookings",
+      "title": "Display a list or table view of all AC service bookings showing customer name, service type, scheduled date/time, address, and current status with ability to update status or cancel bookings",
+      "reqIds": [
+        "REQ-4",
+        "REQ-9"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-design-a-professional-and-clean-visual-theme-suitable-for-a-service-booking-application-with-a-cohesive-color-scheme-clear-typography-and-intuitive-layout-that-works-well-for-form-inputs-and-data-displays",
+      "title": "Design a professional and clean visual theme suitable for a service booking application with a cohesive color scheme, clear typography, and intuitive layout that works well for form inputs and data displays",
+      "reqIds": [
+        "REQ-10",
+        "REQ-5"
+      ],
+      "version": 2
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create booking system for AC service work",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a backend data model to store AC service bookings with fields for customer name, contact number, service type (installation, repair, maintenance, cleaning), preferred date and time, address, and booking status",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement backend functions to create new AC service bookings, retrieve all bookings, update booking status, and delete bookings",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Create a backend data model to store AC service bookings with fields for customer name, contact number, service type (installation, repair, maintenance, cleaning), preferred date and time, address, and booking status",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend functions to create new AC service bookings, retrieve all bookings, update booking status, and delete bookings",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "AC Service Booking App",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
