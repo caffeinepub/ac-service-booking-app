@@ -1,82 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "AC Service Booking Application Frontend",
+  "title": "Display contact number in booking interface",
   "requirements": [
     {
-      "id": "REQ-8",
-      "summary": "Create a booking form interface for users to submit AC service requests",
+      "id": "REQ-11",
+      "summary": "Add contact phone number to the Layout header for visibility across all pages",
       "acceptanceCriteria": [
-        "Form includes input fields for customer name and phone number",
-        "Form includes a dropdown or radio buttons for service type selection with all four options",
-        "Form includes date and time picker inputs",
-        "Form includes an address input field",
-        "Form has a submit button that creates a new booking"
+        "Contact phone number is displayed in the header or footer of the application",
+        "Phone number is clearly visible and formatted for easy reading",
+        "Number remains accessible on all pages of the application"
       ],
       "file_operations": [
-        {
-          "path": "frontend/src/components/BookingForm.tsx",
-          "operation": "create",
-          "description": "Create a booking form component with fields for customer name, contact number, service type dropdown (installation, repair, maintenance, cleaning), preferred date and time pickers, and address input. Use shadcn/ui form components (Input, Select, Button, Label) for consistent styling. On submit, call backend createBooking method with a generated unique ID and the form data. Display success/error feedback to the user."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the BookingForm component in the main application view. Ensure the form is accessible from the primary interface so users can create new bookings."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Display a list of all AC service bookings with ability to update status or cancel bookings",
-      "acceptanceCriteria": [
-        "UI displays all bookings in a list or table format",
-        "Each booking shows customer name, service type, scheduled date/time, address, and status",
-        "UI provides controls to update the status of a booking",
-        "UI provides a control to cancel (delete) a booking"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/BookingList.tsx",
-          "operation": "create",
-          "description": "Create a booking list component that fetches all bookings using the backend getAllBookings method. Display bookings in a table format using shadcn/ui Table component, showing customer name, service type, scheduled date and time, address, and current status. For each booking, provide a dropdown or button group to update the booking status (pending, confirmed, completed, cancelled) using the backend updateBookingStatus method, and a delete button that calls the backend deleteBooking method. Refresh the list after status updates or deletions."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the BookingList component below the BookingForm in the main application view. Ensure the list is visible and updates dynamically when new bookings are created or existing bookings are modified."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Design a professional and clean visual theme suitable for a service booking application",
-      "acceptanceCriteria": [
-        "Application uses a consistent color scheme throughout",
-        "Typography is clear and readable for all text elements",
-        "Layout is intuitive and makes form submission and data viewing straightforward",
-        "Visual design is appropriate for a professional service booking context"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Update global styles to use a professional color scheme with calming blues or greens suitable for a service business. Ensure typography uses clear, readable fonts. Add spacing and layout utilities that support clean form and table displays. Use the generated logo frontend/public/assets/generated/ac-service-logo.dim_200x200.png as a visual branding element if appropriate."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Configure Tailwind theme with a cohesive color palette (primary, secondary, accent colors) appropriate for a professional AC service booking application. Adjust typography settings for clarity and readability. Ensure spacing and layout utilities support intuitive form and data display layouts."
-        },
         {
           "path": "frontend/src/components/Layout.tsx",
-          "operation": "create",
-          "description": "Create a Layout component that wraps the main application content. Include a header with the AC service branding (optionally displaying the logo from frontend/public/assets/generated/ac-service-logo.dim_200x200.png) and a clean, centered content area. Use consistent padding and spacing to ensure the form and booking list are visually organized and easy to navigate."
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Wrap the BookingForm and BookingList components inside the Layout component to apply consistent header, spacing, and branding throughout the application."
+          "description": "Add a contact information section to the header displaying the business phone number prominently. Include appropriate styling and formatting to make it clearly visible. Ensure the phone number remains accessible on all pages since this Layout component wraps all application content."
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "frontend/src/App.tsx": "Main application component that wraps the booking form and list in a layout with theme provider and toast notifications.",
   "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including fetching bookings, creating bookings, updating status, and deleting bookings with proper cache invalidation and toast notifications.",
-  "frontend/src/components/Layout.tsx": "Layout component providing consistent header with branding/logo, main content area, and footer with attribution and current year.",
+  "frontend/src/components/Layout.tsx": "Layout component providing consistent header with branding, prominent contact phone number button (+91 98765 43210), main content area, and footer with attribution and current year.",
   "frontend/src/components/BookingForm.tsx": "Comprehensive booking form with all required fields (customer name, contact, service type, date, time, address) using shadcn UI components with icons and validation.",
   "frontend/src/components/BookingList.tsx": "Table view of all bookings with inline status updates via dropdown, delete confirmation dialog, loading states, and empty state handling.",
   "frontend/src/index.css": "Global styles with professional teal/blue OKLCH color palette for both light and dark modes suitable for AC service business.",

@@ -1,14 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Build a complete AC service booking application that allows customers to book AC services and view/manage all bookings.
+**Goal:** Display the business contact phone number in the application header so it's visible on all pages.
 
 **Planned changes:**
-- Create backend data model for AC service bookings with fields for customer information, service type, scheduling, address, and status
-- Implement backend CRUD operations (create, read, update, delete) for bookings
-- Build a booking form interface with inputs for customer details, service type dropdown (installation, repair, maintenance, cleaning), date/time picker, and address
-- Display all bookings in a list/table view with customer name, service type, scheduled date/time, address, and status
-- Add controls to update booking status and cancel bookings
-- Design a professional, clean visual theme with cohesive colors and clear typography suitable for a service booking application
+- Add a contact information section to the Layout header displaying the business phone number
+- Ensure the phone number is clearly formatted and prominently visible
+- Make the contact number accessible across all pages of the application
 
-**User-visible outcome:** Users can submit new AC service booking requests through a form, view all bookings in an organized list, and manage bookings by updating their status or canceling them.
+**User-visible outcome:** Users will see the business phone number in the header on every page, making it easy to contact the service directly.

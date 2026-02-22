@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "An app for booking AC (air conditioning) service work",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-a-booking-form-interface-where-users-can-enter-customer-details-name-phone-select-service-type-from-options-installation-repair-maintenance-cleaning-choose-preferred-date-and-time-and-provide-service-address",
@@ -32,6 +32,14 @@
         "REQ-5"
       ],
       "version": 2
+    },
+    {
+      "id": "feature-add-a-contact-information-section-to-the-layout-header-that-displays-the-business-phone-number-prominently-visible-on-all-pages",
+      "title": "Add a contact information section to the Layout header that displays the business phone number prominently, visible on all pages",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -71,6 +79,12 @@
       "reqIds": [
         "REQ-7"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add phone number field or contact information to the app",
+      "reqIds": [],
       "status": "pending"
     }
   ],
